@@ -1,0 +1,47 @@
+/* ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  border: 1px solid #000;
+} */
+
+.Header {
+  border: 1px solid grey;
+  height: 100px;
+  /* vertical-align: middle; */
+}
+.Logo {
+  display: inline-block;
+  margin-right: 300px;
+  margin-left: 20px;
+  margin-top: 35px;
+}
+
+.Selection {
+  display: inline-block;
+}
+
+.HeaderOption {
+  display: inline-block;
+  height: 500px;
+}
+.Project {
+  display: inline-block;
+  margin-left: 300px;
+  margin-right: 40px;
+}
+
+.Person {
+  display: inline-block;
+}
+
+/* .Header {
+  border: 1px solid blueviolet;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} */

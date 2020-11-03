@@ -1,0 +1,77 @@
+.TableHeader {
+  margin: 0px auto;
+  width: 1000px;
+  background-color: white;
+}
+
+.TableBody {
+  margin: 0px auto;
+  width: 800px;
+  background-color: white;
+}
+
+.td_gray {
+  background-color: gainsboro;
+}
+
+.whole {
+  background-color: white;
+}
+
+.catSubModel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+div.imgManSerModel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: cornflowerblue;
+  font-weight: bold;
+  display: table;
+}
+
+div.imgManSerModel span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+div.summaryDetailsDocumentContact {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: gainsboro;
+  display: table;
+  width: 1225px;
+  table-layout: fixed;
+}
+
+div.summaryDetailsDocumentContact span {
+  vertical-align: middle;
+}
+
+div.summaryDetailsDocumentContact span {
+  display: table-cell;
+  text-align: center;
+}
+
+.ProductDetail {
+  margin-left: 20px;
+}
+
+img {
+  width: 80px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+button {
+  float: right;
+}

@@ -1,0 +1,24 @@
+.catSubModel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+.whole {
+  background-color: white;
+  font-size: small;
+}
+
+table {
+  margin: 10px;
+}
+.tableclass {
+  background-color: aqua;
+}
+
+th {
+  background-color: aqua;
+}

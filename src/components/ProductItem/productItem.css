@@ -1,0 +1,14 @@
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.catSubcategory {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: cornflowerblue;
+  font-weight: bold;
+  display: table;
+}
