@@ -4,11 +4,13 @@
   background-color: white;
 }
 
+/* the difference betwenn table .TableHeader and .TableHeader */
+/* 
 .TableBody {
   margin: 0px auto;
   width: 800px;
   background-color: white;
-}
+} */
 
 .td_gray {
   background-color: gainsboro;

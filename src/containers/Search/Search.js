@@ -67,15 +67,17 @@ class Search extends Component {
                 <h1>Joole</h1>
                 <h4>Building Product Selection Platform</h4>
                 {searchRedirect}
-                <select>
-                    {
-                         this.props.category.map((category, index) => <option key = {index}>{category}</option> )
-                    } 
+                <div>
+                    <select>
+                        {
+                            this.props.category.map((category, index) => <option key = {index}>{category}</option> )
+                        } 
 
-                </select>
-        
-                <input type="text" value={this.state.value} onChange={this.handleChange} onKeyDown= {this.handleKeyDown} />
-                <button onClick = {this.buttonOnClick}>Search</button>
+                    </select>
+            
+                    <input type="text" value={this.state.value} onChange={this.handleChange} onKeyDown= {this.handleKeyDown} />
+                    <button  className = "SearchButton" onClick = {this.buttonOnClick}>Search</button>
+                </div>
             </div>
             
             </>

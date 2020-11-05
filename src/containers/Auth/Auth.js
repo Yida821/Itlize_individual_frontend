@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 
 import Input from '../../components/UI/Input/Input';
-import Button from '../../components/UI/Button/Button'
+
 
 import './Auth.css';
 import * as actions from '../../store/actions/index';
@@ -147,21 +147,28 @@ class Auth extends Component {
         if (this.props.isAuthenticated) {
             authRedirect = <Redirect to={this.props.authRedirectPath}/>
         }
-
+        let dispabled  = null;
+        if (this.state.isSignup) {
+            dispabled = dispabled
+        }
         return (
+            <>
+             <a href = "http://localhost:3006/signup"><button className ="ButtonSignUp">Sign Up</button></a>
             <div className="Auth">
+               
                 {authRedirect}
                 {errorMessage}
                 <h1>Joole</h1>
                 <h4>Building Product Selection Platform</h4>
                 <form onSubmit={this.submitHandler}>
                     {form}
-                    <Button btnType="Success">SUBMIT</Button>
+                    <button  className = "LoginButton" >SUBMIT</button>
                 </form>
                 {/* <Button
                     clicked={this.switchAuthModeHandler}
                     btnType="Danger">SWITCH TO {this.state.isSignup ? 'SIGNIN' : 'SIGNUP'}</Button> */}
             </div>
+            </>
         );
     }
 }

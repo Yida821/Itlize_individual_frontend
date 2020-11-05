@@ -28,6 +28,9 @@ class ProductItem extends Component {
   constructor(props) {
     super(props);
     this.cardOnClick = this.cardOnClick.bind(this);
+    this.state = {
+      isClicked : false
+    }
   }
 
   componentDidMount() {
@@ -66,6 +69,18 @@ class ProductItem extends Component {
     this.props.onSetCompareClicked()
    
 
+  }
+
+  divOnClick = () => {
+    console.log ("this div is click : show another div");
+    console.log ("before set state this.state.isClicked : ", this.state.isClicked);
+    
+    let opposite =!this.state.isClicked;
+    console.log ("opposite : ",opposite);
+    this.setState({
+      isClicked : opposite
+    })
+    console.log ("after set state this.state.isClicked : ", this.state.isClicked);
   }
 
   render()  {
@@ -149,20 +164,46 @@ class ProductItem extends Component {
         
           <Grid container>
             <Grid item xs = {3}  key = "Grid-Blank">
-
             </Grid>
             <Grid item xs = {9} key = "Grid-Filter">
             <div className = "catSubcategory">
                 <a>{this.props.category[0]}</a>
                 <span> {'>'} </span>
                 <a>{this.props.subCategory} /</a>
-                <button onClick = {this.compareButtonOnClick}>Compare</button>
+                <button className = "CompareButton" onClick = {this.compareButtonOnClick}>Compare</button>
             </div>
             </Grid>
           </Grid>
 
           <Grid container>
-            <Grid item xs = {3} key = "Grid-Product" > </Grid>
+          <Grid item xs = {3}>
+          <div className = "Filter">
+          <div className = " FilterDiv"> <span>Search: </span><button >Save</button><button>Clear</button> </div>
+          <div className = " FilterDiv"> <span>Product</span><span>Project</span> </div>
+          <div className = " FilterDiv" onClick = {this.divOnClick}> <span>Product Type</span> <i class="fad fa-arrow-alt-square-down"></i> </div>
+          <div className = " FilterDiv" style= {{display: this.state.isClicked ? '' : 'none'}} > <span>Model Year: </span> <input class = "InputModelYear"></input><span> - </span> <input className = "InputModelYear"></input>  </div>
+          <div className = " FilterDiv"> <span>Technical Specifications</span>  </div>
+          <div className = " FilterDiv"> <span>Brand</span> </div>
+          <div className = " FilterDiv"> <span>Past Selections</span> </div>
+          <div className = " FilterDiv"> <span>Certification</span> </div>
+                {/* <table  className= "FilterTable">
+                    <tbody className = "FilterTbody">
+                      <td className = "FilterTbodyTd" >
+                        <tr className = "FilterTbodyTr"><span>Search: </span><button>Save</button><button>Clear</button></tr>
+                        <tr className = "FilterTbodyTr"><span>Product</span><span>Project</span></tr>
+                        <tr className = "FilterTbodyTr">Product Type</tr>
+                        <tr className = "FilterTbodyTr">Technical Specifications</tr>
+                        <tr className = "FilterTbodyTr">Brand</tr>
+                        <tr className = "FilterTbodyTr">Past Selections</tr>
+                        <tr className = "FilterTbodyTr">Certification</tr>
+
+                      </td>
+                    </tbody>
+                </table>  */}
+
+            </div>
+            </Grid>
+            {/* <Grid item xs = {3} key = "Grid-Product" > </Grid> */}
             
            {card}
          

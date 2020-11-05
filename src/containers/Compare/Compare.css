@@ -8,17 +8,31 @@
 }
 
 .whole {
-  background-color: white;
-  font-size: small;
+  font-size: medium;
+}
+
+.TbodyTitile {
+  border: 20px;
+}
+.TableTbody {
+  margin: 0px auto;
+}
+
+.Gray {
+  background-color: silver;
+  border-color: silver;
 }
 
 table {
-  margin: 10px;
-}
-.tableclass {
-  background-color: aqua;
+  border: 3px solid gray;
+  width: auto;
 }
 
-th {
-  background-color: aqua;
+img {
+  width: 100px;
+  height: 20px;
+}
+
+td {
+  width: 300px;
 }

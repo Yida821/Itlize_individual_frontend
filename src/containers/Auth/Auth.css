@@ -11,13 +11,25 @@
   transform: translate(-50%, -50%);
 }
 
-button {
+.ButtonSignUp {
   background-color: dodgerblue;
   color: white;
   float: right;
   border-color: transparent;
 }
 
+.LoginButton {
+  background-color: dodgerblue;
+  color: white;
+  float: right;
+  border-color: transparent;
+}
+/* button {
+  background-color: red;
+  color: white;
+  float: left;
+  border-color: transparent;
+} */
 input {
   width: 300px;
   height: 20px;

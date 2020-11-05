@@ -12,3 +12,43 @@ img {
   font-weight: bold;
   display: table;
 }
+
+.CompareButton {
+  background-color: dodgerblue;
+  color: white;
+  float: right;
+  border-color: transparent;
+}
+
+.Filter {
+  border: 4px solid gainsboro;
+  background-color: white;
+  width: 300px;
+  display: inline-block;
+  height: 425px;
+}
+
+.FilterDiv {
+  background-color: gainsboro;
+  border: 2px solid gray;
+}
+
+.InputModelYear {
+  width: 30px;
+}
+/* 
+.FilterTable {
+  height: 427px;
+}
+
+.FilterTbody {
+  border: 3px sold orchid;
+}
+
+.FilterTbodyTr {
+  background-color: gainsboro;
+}
+
+.FilterTbodyTd {
+  background-color: aqua;
+} */

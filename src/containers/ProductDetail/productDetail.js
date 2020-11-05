@@ -5,6 +5,7 @@ import Avatar from '@material-ui/core/Avatar'
 import FanPic3 from '../../static/images/fan3.jpg'
 import Button from '@material-ui/core/Button';
 
+
 import './productDetail.css'
 
 
@@ -25,11 +26,11 @@ class ProductDetail extends Component {
             <div className = "whole">
            
             <div className = "catSubModel">
-                <a href = 'http://localhost:3006/search'>{this.props.category[0]}</a>
+                <span>{this.props.category[0]}</span>
                 <span> {'>'}  </span>
-                <a href = 'http://localhost:3006/productItem'>{this.props.subCategory}</a>
+                <span>{this.props.subCategory}</span>
                 <span> {'>'}  </span>
-                <a href = '/http://localhost:3006/productDetail'>{this.props.selectedProduct.model}</a>
+                <span>{this.props.selectedProduct.model}</span>
             </div>
             <div className = "imgManSerModel">
             {/* <Avatar alt="product image" src={FanPic3} /> */}
@@ -37,7 +38,7 @@ class ProductDetail extends Component {
                 <span>{this.props.selectedProduct.manufacturer}/ </span>
                 <span>{this.props.selectedProduct.series} / </span>
                 <span>{this.props.selectedProduct.model} / </span>
-                <button>Add to</button>
+                
                 {/* <Button size="small" variant="contained" color="primary">
                     Add to
                 </Button> */}
@@ -98,30 +99,6 @@ class ProductDetail extends Component {
         </tbody>
        
     </table>
-
-{/* <table className = "TableBody">
-    <tr>
-        <td>SERIES INFORMATION</td>
-    </tr>
-    <tr>
-        <td>Airfoil Finishes – Caramel Bamboo or Cocoa Bamboo</td>
-    </tr>
-    <tr>
-        <td>Airfoils – Moso bamboo – 60” diameter</td>
-    </tr>
-    <tr>
-        <td>Airfoils – Moso bamboo – 60” diameter</td>
-    </tr>
-    <tr>
-        <td>Hardware Finishes – Satin Nickel, Oil-Rubbed Bronze, Black or White</td>
-    </tr>
-    <tr>
-        <td>Motor – EC motor with digital inverter drive</td>
-    </tr>
-    <tr>
-        <td>Exceeds ENERGY STAR fan efficiency requirements by up to 1200%</td>
-    </tr>
-</table> */}
 
 
        

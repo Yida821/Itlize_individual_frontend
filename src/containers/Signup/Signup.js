@@ -178,11 +178,9 @@ class Signup extends Component {
                 {errorMessage}
                 <form onSubmit={this.submitHandler}>
                     {form}
-                    <Button btnType="Success">Sign Up</Button>
+                    <button className = "SignUpButton">Sign Up!</button>
                 </form>
-                {/* <Button
-                    clicked={this.switchAuthModeHandler}
-                    btnType="Danger">SWITCH TO {this.state.isSignup ? 'SIGNIN' : 'SIGNUP'}</Button> */}
+             
             </div>
         );
     }

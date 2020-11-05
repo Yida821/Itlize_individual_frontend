@@ -11,7 +11,7 @@
   transform: translate(-50%, -50%);
 }
 
-button {
+.SignUpButton {
   background-color: dodgerblue;
   color: white;
   float: right;
